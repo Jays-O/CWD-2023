@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this is for the font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <!-- font awesome cdnjs -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- for connection in materialize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- for css connection -->
+    <link rel="stylesheet" href="nav.css">
+    <title>Navbar/Sidenav</title>
+
+</head>
+<body>
+    
+    <h1 class="center-align">  
+        <i class="fa-solid fa-bars left small menu hide-on-large-only" style="color: #e57373;"></i> NavBar </h1>
+<div class="divider"> </div>
+
+        <div class="container">
+
+            <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+<!-- For Right Aligned Links -->
+
+            <h3>Right Aligned Links</h3>
+            <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+<br>
+
+            <nav class="black">
+                <div class="class nav-wrapper">
+                    <div class="class container">
+                    <a href="" class="brand-logo">
+                        <i class="fa-solid fa-power-off"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            
+                <img class="responsive-img" src="watchimage/w2.jpg" alt="">
+            
+<br>
+<!-- For Left Aligned -->
+    <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+            <nav class="orange lighten-1">
+                <div class="class nav-wrapper">
+                    <div class="container">
+                    <a href="" class="brand-logo right">
+                        <i class="fa-solid fa-power-off"></i>
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <img class="responsive-img" src="watchimage/w4.jpg" alt=""></div>
+           
+        
+
+    <div class="container">
+
+        <!-- Centering Logo -->
+        <h3>Centering the logo</h3>
+        <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.</p>
+        <nav class="brown lighten-2">
+            <div class="class nav-wrapper">
+                <div class="container">
+                <a href="" class="brand-logo center">
+                    <i class="fa-solid fa-power-off"></i>
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    
+       <img class="responsive-img" src="watchimage/w1.jpg" alt="">
+    </div>
+    <div class="container">
+<!-- extended navbar -->
+    <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+
+        <nav class="nav-extended grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo center custom-font">
+                        <i class="fa-brands fa-youtube red-text"></i> Youtube
+                       <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                        <i class="fa-solid fa-bars "></i>
+                            </i>
+                        </a>
+                    </a>
+                </div>     
+            </div>
+
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"> <a href="#All">All</a></li>
+                    <li class="tab"> <a href="#Suggested">Suggested</a> </li>
+                    <li class="tab"> <a href="#Foryou">For you</a> </li>
+                </ul>
+            </div>
+        </nav>
+                <!-- sidenav structure -->
+
+                <ul class="sidenav grey darken-3" id="mobile-demo">
+                    <div class="navbar-fixed">
+                       <nav class="grey darken-3 navbar-fixed">
+                           <div class="container"> 
+                               
+                               <i class="fa-solid fa-bars white-text"> </i>
+           
+                               <a href="" class="navlog"> <i class="fa-brands fa-youtube red-text"></i>
+                                   <a href="" class="custom-font">Youtube</a>
+                               </a>
+                               
+                           </div>
+                       
+                       </nav>
+                   </div>
+                           
+                       </i>
+                       <br>
+           
+                       <li> 
+                       <a href="" class="white-text">Home
+                           <i class="fa-solid fa-house white-text"></i>
+                       </a>
+                       <a href="" class="white-text">Shorts
+                           <i class="fa-solid fa-film white-text"></i>
+                       </a>
+                       <a href="" class="white-text">Subscriptions
+                           <i class="fa-brands fa-square-youtube white-text"></i>
+                       </a>
+                      
+                       <a href="" class="white-text">LIbrary
+                           <i class="fa-solid fa-photo-film white-text"></i>
+                       </li>
+                   
+                   </ul>
+           
+
+        <!-- tabs structure -->
+       
+        <div class="row">
+             <!-- All -->
+            <div class="col s12" id="All">  
+                <div class="card-panel grey darken-4">
+                    <!-- Switch -->
+                            <div class="switch">
+                                <label>
+                                Recent
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                                Top
+                                 </label>
+                            </div>
+                </div>
+            </div>
+        </div>
+            <!-- Suggested -->
+            <div class="col s12" id="Suggested">
+                <section class="section">
+                    <div class="row s2">
+                        <div class="col s6">
+                            <div class="card-panel grey darken-4">
+                                <div class="video-container center">
+                                    <iframe width="894" height="503" src="https://www.youtube.com/embed/grsmKuOXnFg" title="NOSAKAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    
+                                </div>      
+                            </div>
+                        </div>z
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <div class="card-panel grey darken-4">
+                                <div class="video-container center">
+                                    <iframe width="894" height="503" src="https://www.youtube.com/embed/QlcPVitKjOM" title="RAYDORBYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <!-- For you -->
+            <div class="col s12" id="Foryou"> 
+                <div class="card-panel grey darken-4">
+                    <div class="video-container">
+                        <iframe width="804" height="449" src="https://www.youtube.com/embed/-0wZQpdPRi4" title="1st Highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+       
+        
+
+        
+        <!-- sidenav structure -->
+
+        <ul class="sidenav grey darken-3" id="mobile-demo">
+         <div class="navbar-fixed">
+            <nav class="grey darken-3 navbar-fixed">
+                <div class="container"> 
+                    
+                    <i class="fa-solid fa-bars white-text"> </i>
+
+                    <a href="" class="navlog"> <i class="fa-brands fa-youtube red-text"></i>
+                        <a href="" class="custom-font">Youtube</a>
+                    </a>
+                    
+                </div>
+            
+            </nav>
+        </div>
+                
+            </i>
+            <br>
+
+            <li> 
+            <a href="" class="white-text">Home
+                <i class="fa-solid fa-house white-text"></i>
+            </a>
+            <a href="" class="white-text">Shorts
+                <i class="fa-solid fa-film white-text"></i>
+            </a>
+            <a href="" class="white-text">Subscriptions
+                <i class="fa-brands fa-square-youtube white-text"></i>
+            </a>
+           
+            <a href="" class="white-text">LIbrary
+                <i class="fa-solid fa-photo-film white-text"></i>
+            </li>
+
+
+            <div class="container">
+                <div class="divider"></div>
+                <li> 
+                    <a href="" class="white-text">Home
+                        <i class="fa-solid fa-house white-text"></i>
+                    </a>
+                    <a href="" class="white-text">Shorts
+                        <i class="fa-solid fa-film white-text"></i>
+                    </a>
+                    <a href="" class="white-text">Subscriptions
+                        <i class="fa-brands fa-square-youtube white-text"></i>
+                    </a>
+                   
+                    <a href="" class="white-text">LIbrary
+                        <i class="fa-solid fa-photo-film white-text"></i>
+                    </li>
+                    <div class="divider"></div>
+                    <li> 
+                        <a href="" class="white-text">Home
+                            <i class="fa-solid fa-house white-text"></i>
+                        </a>
+                        <a href="" class="white-text">Shorts
+                            <i class="fa-solid fa-film white-text"></i>
+                        </a>
+                        <a href="" class="white-text">Subscriptions
+                            <i class="fa-brands fa-square-youtube white-text"></i>
+                        </a>
+                       
+                        <a href="" class="white-text">LIbrary
+                            <i class="fa-solid fa-photo-film white-text"></i>
+                            
+                        </li>
+                        <li> 
+                            <a href="" class="white-text">Home
+                                <i class="fa-solid fa-house white-text"></i>
+                            </a>
+                            <a href="" class="white-text">Shorts
+                                <i class="fa-solid fa-film white-text"></i>
+                            </a>
+                            <a href="" class="white-text">Subscriptions
+                                <i class="fa-brands fa-square-youtube white-text"></i>
+                            </a>
+                           
+                            <a href="" class="white-text">LIbrary
+                                <i class="fa-solid fa-photo-film white-text"></i>
+                            </li>
+            </div>
+        
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>    
+   
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+    <!-- put your source code of your design in the body -->
+     <!-- Font awesome  -->
+     <script src="https://kit.fontawesome.com/56ca1ea3a7.js" crossorigin="anonymous"></script>
+
+    <!-- this is for Jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+             <script>
+                $(document).ready(function (){
+                    //sidenav init
+                    $('.sidenav').sidenav();
+                    //tabs init
+                    $('.tabs').tabs();
+                });
+             </script>
+
+
+
+        <div style="height: 10060px;"></div>
+</body>
+</html>

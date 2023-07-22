@@ -1,0 +1,11 @@
+h1 , h2 ,h3{
+    font-weight: 330;
+    color: #e57373; 
+}
+p{
+    font-size: 115%;
+}
+h5 , h4 {
+    font-size: xxx-larger;
+    font-weight:bolder
+}

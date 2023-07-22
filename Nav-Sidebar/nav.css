@@ -1,0 +1,57 @@
+h1 , h2 ,h3{
+    font-weight: 330;
+    color: #e57373; 
+}
+.menu { 
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.house{
+   
+    padding-top: 18px;
+}
+
+/* the number for tis brandlogo is for naming only */
+
+.brand-logo1 {
+   padding-right: 10px;
+  
+}
+/* adjust the logo */
+
+.brand-logo3{
+    padding-left: 20px;
+    
+}
+
+table.highlight {
+    background-color: grey darken-4;
+    /* Additional styling properties */
+  }
+
+.custom-font {
+    font-family: "Roboto", san-serif;
+    font-weight: bold;
+  }
+
+  .navlog { 
+    padding-left: 30px;
+    
+    
+}
+
+
+
+  
+
+/* for rotation of an icon */
+.rotate-90 {
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+
+/* highlight a icon */
+  .fa-solid.fa-magnifying-glass:hover {
+    background-color: rgb(184, 174, 174); /* Adjust the highlight color as desired */
+  }
